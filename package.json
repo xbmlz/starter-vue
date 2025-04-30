@@ -1,5 +1,5 @@
 {
-  "name": "starter-vue-ts",
+  "name": "starter-vue",
   "type": "module",
   "version": "0.0.0",
   "private": true,
@@ -11,16 +11,26 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "vue": "^3.4.37"
+    "@unocss/reset": "66.1.0-beta.12",
+    "@vueuse/core": "^13.1.0",
+    "pinia": "^3.0.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.27.1",
-    "@types/node": "^22.5.0",
-    "@vitejs/plugin-vue": "^5.1.2",
-    "eslint": "^9.9.1",
-    "eslint-plugin-format": "^0.1.2",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.1",
-    "vue-tsc": "^2.0.29"
+    "@antfu/eslint-config": "^4.12.0",
+    "@iconify-json/carbon": "^1.2.8",
+    "@types/node": "^22.15.3",
+    "@unocss/eslint-config": "66.1.0-beta.12",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "eslint": "^9.25.1",
+    "eslint-plugin-format": "^1.0.1",
+    "typescript": "^5.8.3",
+    "unocss": "66.1.0-beta.12",
+    "unplugin-auto-import": "^19.1.2",
+    "unplugin-vue-components": "^28.5.0",
+    "vite": "^6.3.3",
+    "vite-plugin-vue-devtools": "^7.7.6",
+    "vue-tsc": "^2.2.10"
   }
 }

@@ -2,9 +2,7 @@
 </script>
 
 <template>
-  <div>
-    Hello Vue 3 + TypeScript!
-  </div>
+  <router-view />
 </template>
 
 <style scoped>
