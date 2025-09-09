@@ -1,0 +1,19 @@
+{
+    "Vue3 Template": {
+      "scope": "vue",
+      "prefix": "vue3",
+      "body": [
+        "<script setup lang='ts'>",
+        "defineOptions({",
+        "\tname: '${1:ComponentName}',",
+        "})",
+        "</script>\n",
+        "<template>",
+        "\t<div>test</div>",
+        "</template>\n",
+        "<style lang='scss' scoped>\n",
+        "</style>"
+      ],
+      "description": "Vue3 SFC 快速生成模板"
+    }
+  }
