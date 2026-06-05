@@ -1,0 +1,64 @@
+$--colors: (
+  'primary': (
+    'base': #c6613f,
+  ),
+  'success': (
+    'base': #00b42a,
+  ),
+  'warning': (
+    'base': #f77234,
+  ),
+  'danger': (
+    'base': #f53f3f,
+  ),
+  'error': (
+    'base': #f53f3f,
+  ),
+  // 'info': (
+  //   'base': #165dff,
+   // ),
+);
+
+$--text-color: (
+  'primary': #1d2129,
+  'regular': #272e3b,
+  'secondary': #4e5969,
+  'placeholder': #a8abb2,
+  'disabled': #c0c4cc,
+);
+
+$--border-radius: (
+  'base': 2px,
+  'small': 2px,
+  'round': 20px,
+  'circle': 100%,
+);
+
+// we can add this to custom namespace, default is 'el'
+// @forward 'element-plus/theme-chalk/src/mixins/config.scss' with (
+//   $namespace: 'ep'
+// );
+
+// You should use them in scss, because we calculate it by sass.
+// comment next lines to use default color
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  // do not use same name, it will override.
+  $font-family: (
+      'default':
+        "'nunito_for_arco', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB','Microsoft YaHei', '微软雅黑', Arial, sans-serif"
+    ),
+  $colors: $--colors,
+  //   $button-padding-horizontal: ('default': 50px)
+  $text-color: $--text-color,
+
+  // $border-radius: $--border-radius
+);
+
+// if you want to import all
+@use 'element-plus/theme-chalk/src/index.scss' as *;
+
+// You can comment it to hide debug info.
+// @debug $--colors;
+
+// custom dark variables
+@use './dark.scss';

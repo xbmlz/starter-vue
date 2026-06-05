@@ -3,15 +3,15 @@
     "target": "ESNext",
     "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
-    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "paths": {
-      "@/*": ["src/*"]
+      "paths": {
+      "@/*": ["./src/*"]
     },
     "resolveJsonModule": true,
     "types": [
-      "vite/client"
+      "vite/client",
+      "element-plus/global"
     ],
     "allowJs": true,
     "strict": true,

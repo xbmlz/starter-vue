@@ -13,4 +13,13 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  preflights: [
+    {
+      getCSS: () => `
+      .el-button {
+        background-color: var(--el-button-bg-color, var(--el-color-white))
+      }
+    `,
+    },
+  ],
 })
